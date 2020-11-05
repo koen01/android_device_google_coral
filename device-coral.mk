@@ -41,3 +41,7 @@ PRODUCT_PACKAGES += \
 # Setup wizard overlay packages for ActiveEdge
 PRODUCT_PACKAGES += \
     PixelSetupWizardOverlayActiveEdge \
+
+# Elmyra
+PRODUCT_PACKAGES += \
+    ElmyraService
