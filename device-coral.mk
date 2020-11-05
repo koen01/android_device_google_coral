@@ -46,3 +46,7 @@ PRODUCT_PACKAGES += \
 
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+
+# Elmyra
+PRODUCT_PACKAGES += \
+    ElmyraService
