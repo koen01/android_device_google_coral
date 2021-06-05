@@ -20,4 +20,6 @@
 <resources>
     <!-- Preferred refresh rate at keyguard, if supported by the display -->
     <integer name="config_keyguardRefreshRate">60</integer>
+    <!-- Wireless charger -->
+    <bool name="config_nfc_conflict_with_wlc">true</bool>
 </resources>
