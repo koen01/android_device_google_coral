@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+TARGET_PREBUILT_KERNEL := device/google/coral-kernel/Image.lz4
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
@@ -29,12 +31,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Parts
-PRODUCT_PACKAGES += \
-    GoogleParts
+#PRODUCT_PACKAGES += \
+#    GoogleParts
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -42,7 +44,7 @@ PRODUCT_PACKAGES += \
     RcsService
 
 # Touch
-include hardware/google/pixel/touch/device.mk
+#include hardware/google/pixel/touch/device.mk
 
 # Build necessary packages for system_ext
 

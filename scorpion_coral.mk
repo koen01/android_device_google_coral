@@ -5,7 +5,7 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/scorpion/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_coral.mk)
@@ -15,7 +15,8 @@ include device/google/coral/coral/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4 XL
-PRODUCT_NAME := lineage_coral
+PRODUCT_NAME := scorpion_coral
+PRODUCT_DEVICE := coral
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2960
@@ -27,4 +28,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/coral/coral:12/SQ1A.220105.002/7961164:user/release-keys
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/coral/coral:12/SQ1A.220105.002/7961164:user/release-keys
+
 $(call inherit-product, vendor/google/coral/coral-vendor.mk)
+$(call inherit-product, vendor/gms/common/common-vendor.mk)
+

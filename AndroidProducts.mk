@@ -25,11 +25,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_flame.mk \
     $(LOCAL_DIR)/aosp_coral_hwasan.mk \
     $(LOCAL_DIR)/aosp_flame_hwasan.mk \
-    $(LOCAL_DIR)/lineage_coral.mk \
-    $(LOCAL_DIR)/lineage_flame.mk
+    $(LOCAL_DIR)/scorpion_coral.mk \
 
 COMMON_LUNCH_CHOICES := \
     aosp_coral-userdebug \
     aosp_flame-userdebug \
-    lineage_coral-userdebug \
-    lineage_flame-userdebug
+    scorpion_coral-userdebug \
