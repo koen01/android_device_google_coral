@@ -8,11 +8,6 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
-
-# Manifests
-#DEVICE_MANIFEST_FILE += device/google/coral/lineage_manifest.xml
-#DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
-
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor
@@ -26,10 +21,6 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 #endif
 #BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 30720000
 #BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 30720000
-
-# SELinux
-BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/dynamic
-BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/vendor
 
 # Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
