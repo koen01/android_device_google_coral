@@ -24,6 +24,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     device/google/coral \
+    hardware/qcom/sm8150 \
     hardware/qcom/sm8150/display \
     hardware/qcom/sm8150/data/ipacfg-mgr \
     hardware/qcom/sm8150/gps \
