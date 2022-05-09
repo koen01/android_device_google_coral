@@ -16,7 +16,7 @@
 
 PRODUCT_HARDWARE := coral
 
-PRODUCT_VENDOR_KERNEL_HEADERS := device/google/coral-kernel/sm8150/kernel-headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/google/coral/sm8150/kernel-headers
 
 include device/google/coral/device-common.mk
 
