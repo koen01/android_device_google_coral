@@ -17,6 +17,9 @@
 # define hardware platform
 PRODUCT_PLATFORM := sm8150
 
+# define kernel headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/google/coral/sm8150/kernel-headers
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
