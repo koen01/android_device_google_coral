@@ -45,9 +45,12 @@ TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=coral \
+    PRODUCT_NAME=coral \
     PRIVATE_BUILD_DESC="coral-user 12 SP2A.220505.002 8353555 release-keys"
 
 BUILD_FINGERPRINT := google/coral/coral:12/SP2A.220505.002/8353555:user/release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/coral/coral:12/SP2A.220505.002/8353555:user/release-keys
 
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
