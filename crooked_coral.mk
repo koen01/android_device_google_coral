@@ -36,19 +36,21 @@ PRODUCT_NAME := crooked_coral
 PRODUCT_DEVICE := coral
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4 XL
+PRODUCT_MANUFACTURER := Google
 
 # Face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
+
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=coral \
+    PRODUCT_NAME="coral" \
     PRIVATE_BUILD_DESC="coral-user 12 SP2A.220505.002 8353555 release-keys"
 
-BUILD_FINGERPRINT := google/coral/coral:12/SP2A.220505.002/8353555:user/release-keys
+BUILD_FINGERPRINT := "google/coral/coral:12/SP2A.220505.002/8353555:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/coral/coral:12/SP2A.220505.002/8353555:user/release-keys
