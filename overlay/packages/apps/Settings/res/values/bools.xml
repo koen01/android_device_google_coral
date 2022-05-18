@@ -17,4 +17,7 @@
 <resources>
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
+
+    <!-- Whether assist gesture settings should be enabled -->
+    <bool name="config_should_enable_assist_gesture_settings">false</bool>
 </resources>
