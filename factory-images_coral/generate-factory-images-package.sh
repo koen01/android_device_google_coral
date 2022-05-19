@@ -14,12 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-source ../../../common/clear-factory-images-variables.sh
-BUILD=5633534
-DEVICE=coral
-PRODUCT=coral
-VERSION=qd1a.190604.002
-SRCPREFIX=signed-
-BOOTLOADER=c2f2-0.2-5619770
-RADIO=g8150-00039-190530-b-5618404
-source ../../../common/generate-factory-images-common.sh
+source ../../common/clear-factory-images-variables.sh
+BUILD=eng.koen
+DEVICE=crooked_coral
+PRODUCT=crooked_coral
+VERSION=sp2a.220505.002
+SRCPREFIX=../../../../out/target/product/coral/obj/PACKAGING/target_files_intermediates/
+BOOTLOADER=c2f2-0.4-8048765
+RADIO=g8150-00123-220122-B-8106568
+source ../../common/generate-factory-images-common.sh
+
