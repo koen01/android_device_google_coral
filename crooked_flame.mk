@@ -15,7 +15,7 @@ $(call inherit-product, device/google/coral/aosp_flame.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-include device/google/coral/device-crooked.mk
+include device/google/coral/flame/device-crooked.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
