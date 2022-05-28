@@ -11,12 +11,14 @@ $(call inherit-product, vendor/crooked/config/gsm.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/coral/aosp_coral.mk)
 
-<<<<<<< HEAD:crooked_coral.mk
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 include device/google/coral/coral/device-crooked.mk
+
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google

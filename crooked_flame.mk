@@ -17,6 +17,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 include device/google/coral/flame/device-crooked.mk
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := false
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
