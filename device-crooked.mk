@@ -173,3 +173,6 @@ PRODUCT_PACKAGES += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+# Parts
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
