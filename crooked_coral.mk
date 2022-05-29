@@ -21,9 +21,11 @@ include device/google/coral/coral/device-crooked.mk
 TARGET_FACE_UNLOCK_SUPPORTED := false
 
 # Device identifier. This must come after all inclusions
+PRODUCT_NAME := crooked_coral
+PRODUCT_DEVICE := coral
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4 XL
-PRODUCT_NAME := crooked_coral
+
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2960
