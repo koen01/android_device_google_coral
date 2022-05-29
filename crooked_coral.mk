@@ -38,3 +38,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/coral/coral:12/SP2A.220505.002/8353555:user/release-keys
 
 $(call inherit-product, vendor/google/coral/coral-vendor.mk)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+
