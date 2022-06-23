@@ -180,3 +180,7 @@ TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+
+# Quick Tap
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.columbus.model=tap7cls_coral.tflite
